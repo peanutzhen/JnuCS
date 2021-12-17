@@ -13,8 +13,7 @@
 1. 下载项目至您的电脑，该软件跨平台，已在Windows/Mac测试：
 
    ```bash
-   git clone https://github.com/astzls213/database-HW.git
-   cd database-HW
+   cd src
    ```
    
 2. 请确保安装[Python3](https://www.python.org/downloads/)，并跟随下面命令：
