@@ -1,0 +1,11 @@
+Hyperparameter optimal
+lr scope:-6 ~ -2
+Model1 (val_acc: 0.06) | lr: 0.0016439059982076287
+Model2 (val_acc: 0.62) | lr: 7.957936759339646e-06
+Model3 (val_acc: 0.70) | lr: 0.0002920187544077635
+Model4 (val_acc: 0.60) | lr: 1.1548000657057855e-05
+Model5 (val_acc: 0.62) | lr: 1.0404687600384932e-05
+Model6 (val_acc: 0.30) | lr: 1.9459143913991284e-06
+Model7 (val_acc: 0.58) | lr: 9.558794772601686e-06
+Model8 (val_acc: 0.11) | lr: 0.0018777807708829641
+Model9 (val_acc: 0.65) | lr: 1.549083935969975e-05
