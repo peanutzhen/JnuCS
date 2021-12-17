@@ -1,0 +1,12 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+Y:/Vivado_Projects/alu/alu.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+Y:/Vivado_Projects/alu/alu.srcs/sim_1/imports/new/sim.v,1603192710,verilog,,,,sim,,,,,,,,
+Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/alu.v,1602587684,verilog,,Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/cumsum.v,,alu,,,,,,,,
+Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/cumsum.v,1602990498,verilog,,Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/digit.v,,cumsum,,,,,,,,
+Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/digit.v,1602593240,verilog,,Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/divclk.v,,digit,,,,,,,,
+Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/divclk.v,1602594294,verilog,,Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/fibo.v,,divclk,,,,,,,,
+Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/fibo.v,1602990509,verilog,,Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/top.v,,fibo,,,,,,,,
+Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/top.v,1603192641,verilog,,Y:/Vivado_Projects/alu/alu.srcs/sim_1/imports/new/sim.v,,top,,,,,,,,

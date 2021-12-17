@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/cumsum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cumsum
+INFO: [VRFC 10-2263] Analyzing Verilog file "Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/divclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/fibo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fibo
+INFO: [VRFC 10-2263] Analyzing Verilog file "Y:/Vivado_Projects/alu/alu.srcs/sources_1/imports/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "Y:/Vivado_Projects/alu/alu.srcs/sim_1/imports/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim

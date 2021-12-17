@@ -1,0 +1,418 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Dec  7 15:37:10 2020
+# Process ID: 5044
+# Current directory: Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.runs/synth_1
+# Command line: vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file: Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.runs/synth_1/TOP.vds
+# Journal file: Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+Command: synth_design -top TOP -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9576 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 387.934 ; gain = 98.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/TOP.v:3]
+INFO: [Synth 8-226] default block is never used [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/TOP.v:43]
+INFO: [Synth 8-638] synthesizing module 'PC' [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/PC.v:4]
+INFO: [Synth 8-256] done synthesizing module 'PC' (1#1) [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/PC.v:4]
+INFO: [Synth 8-638] synthesizing module 'ROM' [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/ROM.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (2#1) [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/ROM.v:3]
+INFO: [Synth 8-638] synthesizing module 'ID' [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/ID.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ID' (3#1) [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/ID.v:6]
+INFO: [Synth 8-638] synthesizing module 'CU' [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/CU.v:6]
+INFO: [Synth 8-256] done synthesizing module 'CU' (4#1) [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/CU.v:6]
+INFO: [Synth 8-638] synthesizing module 'RegStack' [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/RegStack.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RegStack' (5#1) [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/RegStack.v:6]
+INFO: [Synth 8-638] synthesizing module 'ALU' [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/ALU.v:3]
+	Parameter ZERO bound to: 4'b0000 
+	Parameter ADD bound to: 4'b0001 
+	Parameter SUB bound to: 4'b0010 
+	Parameter AND bound to: 4'b0011 
+	Parameter OR bound to: 4'b0100 
+	Parameter XOR bound to: 4'b0101 
+	Parameter SLL bound to: 4'b0110 
+	Parameter SRL bound to: 4'b0111 
+	Parameter SRA bound to: 4'b1000 
+	Parameter NE bound to: 4'b1001 
+	Parameter LT bound to: 4'b1010 
+	Parameter LTU bound to: 4'b1011 
+	Parameter GE bound to: 4'b1100 
+	Parameter GEU bound to: 4'b1101 
+	Parameter SL12 bound to: 4'b1110 
+	Parameter SL12ADD bound to: 4'b1111 
+INFO: [Synth 8-226] default block is never used [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/ALU.v:19]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (6#1) [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-638] synthesizing module 'IOMapping' [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/IOMapping.v:8]
+INFO: [Synth 8-638] synthesizing module 'RAM' [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/RAM.v:3]
+	Parameter LB bound to: 0 - type: integer 
+	Parameter LH bound to: 1 - type: integer 
+	Parameter LW bound to: 2 - type: integer 
+	Parameter LBU bound to: 3 - type: integer 
+	Parameter LHU bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RAM' (7#1) [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/RAM.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IOMapping' (8#1) [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/IOMapping.v:8]
+INFO: [Synth 8-638] synthesizing module 'Screen' [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/Screen.v:4]
+INFO: [Synth 8-638] synthesizing module 'divclk' [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/imports/new/divclk.v:3]
+INFO: [Synth 8-256] done synthesizing module 'divclk' (9#1) [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/imports/new/divclk.v:3]
+INFO: [Synth 8-638] synthesizing module 'digit' [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/imports/new/digit.v:3]
+INFO: [Synth 8-226] default block is never used [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/imports/new/digit.v:18]
+INFO: [Synth 8-226] default block is never used [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/imports/new/digit.v:29]
+INFO: [Synth 8-256] done synthesizing module 'digit' (10#1) [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/imports/new/digit.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Screen' (11#1) [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/Screen.v:4]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (12#1) [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/TOP.v:3]
+WARNING: [Synth 8-3331] design ROM has unconnected port addr[1]
+WARNING: [Synth 8-3331] design ROM has unconnected port addr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 440.035 ; gain = 150.469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 440.035 ; gain = 150.469
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/constrs_1/new/restrict.xdc]
+Finished Parsing XDC File [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/constrs_1/new/restrict.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/constrs_1/new/restrict.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 770.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 770.801 ; gain = 481.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 770.801 ; gain = 481.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 770.801 ; gain = 481.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "ins" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element data_reg was removed.  [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/imports/new/divclk.v:9]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/new/TOP.v:43]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 770.801 ; gain = 481.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
++---RAMs : 
+	              992 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 2     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module RegStack 
+Detailed RTL Component Info : 
++---RAMs : 
+	              992 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module RAM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+Module IOMapping 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module digit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element Screen_divclk/data_reg was removed.  [Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.srcs/sources_1/imports/new/divclk.v:9]
+WARNING: [Synth 8-3331] design ROM has unconnected port addr[1]
+WARNING: [Synth 8-3331] design ROM has unconnected port addr[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 770.801 ; gain = 481.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                           | Inference | Size (Depth x Width) | Primitives      | 
++------------+--------------------------------------+-----------+----------------------+-----------------+
+|TOP         | TOP_RegStack/regs_reg                | Implied   | 32 x 32              | RAM32M x 12     | 
+|TOP         | TOP_IOMapping/IOMapping_RAM/data_reg | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+--------------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 785.340 ; gain = 495.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 785.859 ; gain = 496.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+--------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                           | Inference | Size (Depth x Width) | Primitives      | 
++------------+--------------------------------------+-----------+----------------------+-----------------+
+|TOP         | TOP_RegStack/regs_reg                | Implied   | 32 x 32              | RAM32M x 12     | 
+|TOP         | TOP_IOMapping/IOMapping_RAM/data_reg | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+--------------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 835.395 ; gain = 545.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 835.395 ; gain = 545.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 835.395 ; gain = 545.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 835.395 ; gain = 545.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 835.395 ; gain = 545.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 835.395 ; gain = 545.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 835.395 ; gain = 545.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    41|
+|3     |LUT1     |     5|
+|4     |LUT2     |   136|
+|5     |LUT3     |   117|
+|6     |LUT4     |    56|
+|7     |LUT5     |    55|
+|8     |LUT6     |   167|
+|9     |RAM32M   |    12|
+|10    |RAM64X1S |    32|
+|11    |FDRE     |    87|
+|12    |IBUF     |     8|
+|13    |OBUF     |    22|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------------+----------+------+
+|      |Instance                |Module    |Cells |
++------+------------------------+----------+------+
+|1     |top                     |          |   739|
+|2     |  TOP_ALU               |ALU       |    12|
+|3     |  TOP_IOMapping         |IOMapping |    86|
+|4     |    IOMapping_RAM       |RAM       |    32|
+|5     |  TOP_PC                |PC        |   481|
+|6     |  TOP_RegStack          |RegStack  |    88|
+|7     |  TOP_Screen            |Screen    |    41|
+|8     |    Screen_divclk       |divclk    |    25|
+|9     |    Screen_left_digits  |digit     |     8|
+|10    |    Screen_right_digits |digit_0   |     8|
++------+------------------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 835.395 ; gain = 545.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 835.395 ; gain = 215.063
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 835.395 ; gain = 545.828
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 835.395 ; gain = 558.645
+INFO: [Common 17-1381] The checkpoint 'Y:/Vivado_Projects/RISCV_CPU/RISCV_CPU.runs/synth_1/TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 835.395 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  7 15:37:53 2020...
