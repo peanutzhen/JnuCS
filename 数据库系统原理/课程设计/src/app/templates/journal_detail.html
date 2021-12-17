@@ -1,0 +1,69 @@
+{% extends 'main_base.html' %}
+
+{% block title %}
+    详细信息 - 期刊管理系统
+{% endblock title %}
+
+{% block my_styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='pop.css') }}">
+{% endblock my_styles %}
+
+{% block scripts %}
+{{ super() }}
+<script src="{{ url_for('static', filename='pop.js') }}"></script>
+{% endblock scripts %}
+
+{% block page_content %}
+{# 这是弹窗部分 #}
+<div id="popwin">
+    <div class="panel panel-danger" >
+        <div class="panel-heading">
+            <h3 class="panel-title">警告</h3>
+        </div>
+        <div class="panel-body">
+            <p>真的要删除吗？此操作无法撤销。</p>
+            <a href="{{ url_for('main.delete', issn=journal.issn) }}" class="btn btn-danger">确定</a>
+            <a id="cancel" href="#" class="btn btn-primary">取消</a>
+        </div>
+    </div>
+</div>
+
+{# 这是主体部分 #}
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="row">
+            <div class="jumbotron">
+                <h1></h1>
+                <p>
+                    中文刊名: {{ journal.cn_name }}<br>
+                    英文刊名: {{ journal.en_name }}<br>
+                    ISSN: {{ journal.issn }}<br>
+                    CN: {{ journal.cn }}<br>
+                    主编: {% for editor in journal.editors %}{{ editor.name }} {% endfor %}<br>
+                    主办单位: {% for organ in journal.organizers %}{{ organ.name }} {% endfor %}<br>
+                    创刊时间: {{ journal.public_year }}<br>
+                    出版周期(期/年): {{ journal.public_cycle }}<br>
+                    地址: {{ journal.address }}<br>
+                    邮编: {{ journal.zipcode }}<br>
+                    电邮: {% for email in journal.emails %}{{ email.email }} {% endfor %}<br>
+                    电话: {{ journal.tel }}<br>
+                    传真: {{ journal.fax }}
+                </p>
+                <p>
+                    <a href="{{ url_for('main.update', issn=journal.issn)}}" class="btn btn-primary">修改期刊信息</a>
+                    <button class="btn" id="delete">
+                        <span style="color:tomato;">删除该期刊</span>
+                    </button>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-md-1"></div>
+</div>
+{% endblock page_content %}
+
+
+            
+            

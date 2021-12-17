@@ -1,0 +1,101 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+    期刊管理系统
+{% endblock title %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="../static/main_frame.css">
+{% block my_styles %}
+    
+{% endblock my_styles %}
+{% endblock styles %}
+
+{% block scripts %}
+{{ super() }}
+<script src=" {{ url_for('static', filename='renderer.js') }}"></script>
+<script>window.jQuery = window.$ = module.exports</script>
+{% endblock  %}
+
+{# 这是导航栏 #}
+{% block navbar %}
+{# inverse 用于深色模式 fixed-top 用于固定#}
+<nav id="top_nav" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">   {# 流式布局 #}
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">期刊管理系统</a>
+        </div>
+        <ul id="top_nav_btn_list" class="nav navbar-nav navbar-right">
+            <li><a href="{{ url_for('main.about') }}">关于作者</a></li>
+        </ul>
+        <form id="top_nav_form" class="navbar-form navbar-right" action="{{ url_for('main.search') }}" method="POST">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+            <select name="option" class="form-control">
+                <option value="cn_name">中文刊名</option>
+                <option value="issn">ISSN</option>
+                <option value="cn">CN</option>
+            </select>
+            <input type="text" name="search" class="form-control" placeholder="Search...">
+        </form>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        {# 这是侧边栏 #}
+        <div class="col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="active">
+                    <a href="{{ url_for('main.index') }}">总览</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('main.insert') }}">增添新期刊</a>
+                </li>
+                <li>
+                    <a id="gen_report" href="#">生成报表</a>
+                </li>
+                <li>
+                    <a id="print_report" href="{{ url_for('main.print_report') }}">打印报表</a>
+                </li>
+            </ul>
+        </div>
+        {# 这是页面内容 #}
+        <div class="col-md-10 col-md-offset-2 main">
+        {% block page_content %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                {% block panel_head %}
+                    
+                {% endblock %}
+            </div>
+            <div class="panel-body">
+                {% block panel_body %}
+                    
+                {% endblock %}
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    {% block table_head %}
+                        
+                    {% endblock  %}
+                </thead>
+                <tbody>
+                    {% block table_body %}
+                        
+                    {% endblock  %}
+                </tbody>
+            </table>
+        </div>
+        {% endblock page_content%}
+
+        {% block custom_content %}
+            
+        {% endblock custom_content %}
+        </div>
+    </div>
+</div>
+{% endblock  %}

@@ -1,0 +1,47 @@
+{% extends 'main_base.html' %}
+
+{% block title %}
+    查询结果 - 期刊管理系统
+{% endblock title %}
+
+{% block panel_head %}
+    查询结果
+{% endblock panel_head %}
+
+{% block panel_body %}
+{% for tag, msg in get_flashed_messages(with_categories=true) %}
+<div class="alert alert-{{ tag }}" role="alert">
+    {{ msg }}
+</div>
+{% endfor %}
+{% endblock panel_body %}
+
+{% block table_head %}
+<tr>
+    <th class="col-md-1">编号</th>
+    <th class="col-md-3">期刊名</th>
+    <th class="col-md-3">英文名</th>
+    <th class="col-md-3">主办方</th>
+    <th class="col-md-2">主编</th>
+</tr>
+{% endblock table_head %}
+
+{% block table_body %}
+    {% for result in results %}
+    <tr>
+        <td>{{ loop.index }}</td>
+        <td><a href="{{ url_for('main.detail', issn=result.issn) }}">{{ result.cn_name }}</a></td>
+        <td>{{ result.en_name }}</td>
+        <td>
+        {% for editor in result.editors %}
+        {{ editor.name }} 
+        {% endfor %}
+        </td>
+        <td>
+        {% for organ in result.organizers %}
+        {{ organ.name }} 
+        {% endfor %}
+        </td>
+    </tr>
+    {% endfor %}
+{% endblock table_body %}
