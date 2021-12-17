@@ -1,0 +1,18 @@
+int main() {
+    int argv1 = 10;
+    int argv2 = 32;
+
+    int array[] = {1, 2, 321};
+    // This is a comment.
+
+    do
+    {
+        begin i := 24;
+        if (argv1 <= i) then
+            argv1 = argv1 + 2;
+        end
+    } while (argv1 < argv2);
+    cout < (argv1*2 + argv2/3);
+
+    return 0;
+}
