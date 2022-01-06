@@ -1,4 +1,12 @@
+# MacOS
 .DS_Store
-/.idea
-/.vscode
 
+# IDE
+.idea/
+.vscode/
+
+# Python
+venv
+
+# Maven
+target/
