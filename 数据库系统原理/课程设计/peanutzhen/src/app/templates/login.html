@@ -1,0 +1,23 @@
+{% extends 'auth_base.html' %}
+
+{% block page_content %}
+    <div class="container">
+        <form class="form-signin" method="POST">
+            <h2 class="form-signin-heading">请登录</h2>
+            
+            {{ wtf.quick_form(form) }}
+        </form>
+        <p>
+            新用户？
+            <a href="{{ url_for('main.register') }}">
+                点击这里注册！
+            </a>
+        </p>
+        
+        {% for tag, msg in get_flashed_messages(with_categories=true) %}
+        <div class="alert alert-{{ tag }}" role="alert">
+            {{ msg }}
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

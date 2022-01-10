@@ -1,0 +1,27 @@
+{
+  "name": "database-HW",
+  "version": "1.0.0",
+  "description": "暨南大学数据库系统概念实验课项目",
+  "main": "main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astzls213/database-HW.git"
+  },
+  "keywords": [],
+  "author": "astzls",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/astzls213/database-HW/issues"
+  },
+  "homepage": "https://github.com/astzls213/database-HW#readme",
+  "devDependencies": {
+    "electron": "*"
+  }
+}
