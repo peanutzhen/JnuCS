@@ -1,0 +1,35 @@
+# Initial code
+	irmovq Stack,%rsp
+	irmovq ele1, %rdi
+	call rsum_list
+	halt
+
+# Sample linked list
+.align 8
+ele1:
+	.quad 0x00a
+	.quad ele2
+ele2:
+	.quad 0x0b0
+	.quad ele3
+ele3:
+	.quad 0xc00
+	.quad 0
+
+# long rsum_list(list_ptr ls)
+# ls in %rdi
+rsum_list:
+	pushq %rbx		# Save %rbx
+	andq %rdi,%rdi		# ls == 0?
+	je zret			# Yes, goto zreturn
+	mrmovq (%rdi),%rbx	# val = ls->val
+	mrmovq 8(%rdi),%rdi	# ls = ls->next
+	call rsum_list		# rsum_list(ls)
+	addq %rbx,%rax		# val+rest
+	jmp done		# Goto done
+zret:	xorq %rax,%rax		# val = 0
+done:	popq %rbx		# restore %rbx
+	ret			# return
+
+.pos 0x100
+Stack:
